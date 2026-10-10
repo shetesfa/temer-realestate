@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Article | TEMER Real Estate Addis Ababa</title>
+  <meta name="description" content="In-depth analysis and guidance on real estate in Addis Ababa, Ethiopia from TEMER Real Estate.">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="brand-logo" aria-label="TEMER Real Estate Home">
+        <div class="logo-badge">T</div>
+        <div class="logo-text">
+          <span class="logo-title">TEMER</span>
+          <span class="logo-subtitle">Real Estate · Addis Ababa</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="properties.html" class="nav-link">Properties</a></li>
+          <li><a href="3d-explorer.html" class="nav-link"><i class="fa-solid fa-video text-gold"></i> Virtual Tour</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="locations.html" class="nav-link">Locations</a></li>
+          <li><a href="diaspora.html" class="nav-link">Diaspora</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link active">Insights</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+251941246658" class="phone-badge">
+          <i class="fa-solid fa-phone"></i> +251 94 124 6658
+        </a>
+        <a href="contact.html#consultation" class="btn btn-primary btn-sm">
+          Book Consultation
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Article Reader Container -->
+  <main class="section section-dark" style="padding-top: 130px; min-height: 80vh;" id="article-reader-main">
+    <div class="container" style="max-width: 860px;" id="article-content-container">
+      <!-- Injected via JavaScript -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom:14px;">
+            <div class="logo-badge">T</div>
+            <div class="logo-text">
+              <span class="logo-title">TEMER</span>
+              <span class="logo-subtitle">Real Estate · Addis Ababa</span>
+            </div>
+          </div>
+          <p>TEMER Real Estate (TEMER Properties) is a real estate development company based in Addis Ababa, Ethiopia. Founded in 2010 EC, with over 350 apartment units delivered.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="properties.html">Properties</a>
+            <a href="3d-explorer.html">Virtual Property Tour</a>
+            <a href="projects.html">Projects</a>
+            <a href="locations.html">Locations</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Residential Development</a>
+            <a href="diaspora.html">Diaspora Services</a>
+            <a href="about.html">About Company</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Contact TEMER</h4>
+          <div class="footer-links">
+            <div style="color:var(--text-white); font-weight:600;"><i class="fa-solid fa-phone text-gold"></i> +251 94 124 6658</div>
+            <div style="color:var(--temer-green-light); font-weight:600;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Available</div>
+            <div style="color:var(--text-secondary);"><i class="fa-solid fa-location-dot text-gold"></i> Addis Ababa, Ethiopia</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 TEMER Real Estate. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/251941246658" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('article-content-container');
+      if (!container) return;
+
+      const params = new URLSearchParams(window.location.search);
+      const articleId = params.get('id') || 'diaspora-investment-guide';
+
+      const articles = {
+        'diaspora-investment-guide': {
+          title: "Why Addis Ababa Real Estate Remains Ethiopia's Premier Inflation Hedge",
+          category: "Market Economics",
+          date: "October 2026",
+          image: "../assets/images/photo_2026-10-09_10-14-17.jpg",
+          content: `
+            <p>For high-net-worth Ethiopians and diaspora investors worldwide, prime real estate in Addis Ababa continues to demonstrate superior capital preservation characteristics compared to alternative domestic asset classes.</p>
+            <h3>Sustained Urban Demand in Strategic Corridors</h3>
+            <p>Addis Ababa serves not only as Ethiopia's economic engine but as the diplomatic capital of Africa, housing the African Union Headquarters, the UN Economic Commission for Africa (UNECA), and over 120 bilateral foreign embassies. This continuous international presence anchors an evergreen tenant market for high-quality residential apartments in Bole, Kazanchis, and Sarbet.</p>
+            <h3>Foreign Exchange Dynamics and Asset Growth</h3>
+            <p>With Ethiopia's financial reforms and foreign currency market transitions, holding tangible physical property in proven locations hedges directly against monetary shifts. Prime apartments have demonstrated annualized capital value appreciation of 15% to 22% over five-year holding cycles.</p>
+            <div style="background:var(--bg-secondary); border-left:4px solid var(--gold-primary); padding:20px; border-radius:var(--radius-sm); margin:28px 0;">
+              <h4 style="color:var(--gold-primary); margin-bottom:6px;">Key Strategic Recommendation</h4>
+              <p style="margin:0; font-size:0.92rem;">Prioritize developers with verified delivery records exceeding 300 units, clear master deed title certifications, and on-site standby utilities.</p>
+            </div>
+          `
+        },
+        'foreign-currency-account-guide': {
+          title: "Navigating Foreign Currency Account Remittance & Power of Attorney",
+          category: "Diaspora Advisory",
+          date: "September 2026",
+          image: "../assets/images/posters/poster_video1.jpg",
+          content: `
+            <p>Purchasing real estate in Addis Ababa from North America, Europe, or the Gulf requires a clear understanding of the National Bank of Ethiopia's foreign exchange regulations and legal authentication pathways.</p>
+            <h3>Foreign Currency Account (FCA) Remittances</h3>
+            <p>Diaspora buyers are eligible to maintain foreign currency accounts in Ethiopian commercial banks, transferring funds via international SWIFT wire transfers (USD, EUR, GBP). These transactions establish legal proof of inward remittance, qualifying buyers for authorized banking privileges.</p>
+            <h3>Power of Attorney (Wekilna) Process</h3>
+            <p>If you cannot travel to Addis Ababa to finalize your purchase agreement, you can authenticate a specialized Power of Attorney (Wekilna) through your jurisdiction's Ethiopian Embassy or Consulate. This document empowers your designated representative to inspect finishing milestones and accept keys upon formal building commissioning.</p>
+          `
+        },
+        'construction-standards-ethiopia': {
+          title: "Soundproofing, Water Reserves, and Generator Redundancy in High-Rise Living",
+          category: "Architecture & Quality",
+          date: "August 2026",
+          image: "../assets/images/posters/poster_video3.jpg",
+          content: `
+            <p>Modern luxury in Addis Ababa is defined not solely by marble lobbies, but by the unseen engineering redundancies that guarantee daily peace and comfort.</p>
+            <h3>Acoustic Soundproofing & Double Glazing</h3>
+            <p>Urban density along vibrant avenues requires high-performance sound-insulating facades. TEMER developments incorporate double-glazed thermal and acoustic glass panels that substantially dampen exterior street ambient noise while optimizing interior temperature stability.</p>
+            <h3>Uninterrupted Standby Power & Water Reserves</h3>
+            <p>TEMER towers feature industrial-grade automatic standby generators synchronized to power passenger lifts, water booster pumps, security monitoring systems, and household appliances during municipal maintenance. Furthermore, multi-chamber underground and overhead water storage guarantees independent water autonomy.</p>
+          `
+        },
+        'bole-vs-kazanchis-investment': {
+          title: "Bole vs. Kazanchis: Selecting the Ideal Corridor for Rental Yield",
+          category: "Investment Strategy",
+          date: "July 2026",
+          image: "../assets/images/posters/poster_video4.jpg",
+          content: `
+            <p>When selecting a high-yield residential investment in Addis Ababa, buyers often compare Bole with Kazanchis. Both represent top-tier locations, yet cater to subtly distinct tenant profiles.</p>
+            <h3>Bole: Lifestyle, Commerce & Diaspora Hub</h3>
+            <p>Bole is the pulsating lifestyle capital, adjacent to Bole International Airport, luxury hotels, and modern shopping plazas. It is the premier choice for visiting diaspora families and corporate executives who prize convenience and vibrant nightlife.</p>
+            <h3>Kazanchis: The Diplomatic & Institutional Enclave</h3>
+            <p>Kazanchis centers on the United Nations Economic Commission for Africa (UNECA) and governmental ministries. Expatriate diplomats and international NGO consultants prioritize Kazanchis for short walking commutes, established security corridors, and quiet residential luxury.</p>
+          `
+        }
+      };
+
+      const article = articles[articleId] || articles['diaspora-investment-guide'];
+      document.title = `${article.title} | TEMER Insights`;
+
+      container.innerHTML = `
+        <nav aria-label="Breadcrumb" style="margin-bottom:24px; font-size:0.85rem; color:var(--text-muted);">
+          <a href="../index.html" style="color:var(--text-secondary);">Home</a> &nbsp;/&nbsp;
+          <a href="blog.html" style="color:var(--text-secondary);">Insights</a> &nbsp;/&nbsp;
+          <span style="color:var(--gold-primary);">${article.category}</span>
+        </nav>
+
+        <div class="badge-tag" style="margin-bottom:12px;">${article.category} · ${article.date}</div>
+        <h1 style="font-size:clamp(2rem, 3.8vw, 2.9rem); line-height:1.2; margin-bottom:24px;">
+          ${article.title}
+        </h1>
+
+        <div style="height:420px; border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-medium); margin-bottom:36px; box-shadow:var(--shadow-lg);">
+          <img src="${article.image}" alt="${article.title}" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+
+        <div style="font-size:1.08rem; line-height:1.8; color:var(--text-primary); margin-bottom:40px;">
+          ${article.content}
+        </div>
+
+        <div style="background:var(--bg-card); border:1px solid var(--gold-border); border-radius:var(--radius-md); padding:32px; text-align:center;">
+          <h3 style="margin-bottom:8px;">Discuss Your Investment Objectives</h3>
+          <p style="font-size:0.92rem; color:var(--text-secondary); margin-bottom:20px;">
+            Our Addis Ababa property specialists provide personalized market consultations.
+          </p>
+          <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+            <a href="contact.html#consultation" class="btn btn-primary">
+              Book a Consultation &rarr;
+            </a>
+            <a href="https://wa.me/251941246658" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

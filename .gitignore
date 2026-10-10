@@ -1,0 +1,14 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Root duplicate media (actual media resides in assets/videos)
+/IMG_9306.MOV
+/IMG_9335.MP4
+/IMG_9374.MOV
+/IMG_9414.MOV
+
+# Local audit scripts
+audit.py
+update_links.py
