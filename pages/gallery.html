@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery & 360° Virtual Tour | TEMER Real Estate</title>
+  <meta name="description" content="Explore photos, on-site architectural videos, and interactive 360-degree virtual views of TEMER Real Estate developments in Addis Ababa, Ethiopia.">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="brand-logo" aria-label="TEMER Real Estate Home">
+        <img src="../assets/images/Logo.jpg" alt="Temer Properties" class="brand-logo-img">
+        <div class="logo-text">
+          <span class="logo-title">TEMER <br>PROPERTIES</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="properties.html" class="nav-link">Properties</a></li>
+          <li><a href="3d-explorer.html" class="nav-link"><i class="fa-solid fa-cube text-gold"></i> 3D Explorer</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="locations.html" class="nav-link">Locations</a></li>
+          <li><a href="diaspora.html" class="nav-link">Diaspora</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Insights</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+251941246658" class="phone-badge">
+          <i class="fa-solid fa-phone"></i> +251 941 246 658
+        </a>
+        <a href="contact.html#consultation" class="btn btn-primary btn-sm">
+          Book Consultation
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section section-dark" style="padding-top: 140px; padding-bottom: 60px; border-bottom: 1px solid var(--border-light);">
+    <div class="container text-center">
+      <div class="badge-tag">Visual Showcase</div>
+      <h1 style="font-size:clamp(2.4rem, 4.5vw, 3.6rem); margin-bottom: 16px;">
+        Media Gallery & 360° Experience
+      </h1>
+      <p style="max-width: 720px; margin: 0 auto; font-size: 1.1rem;">
+        Authentic photography, on-site construction video stories, and interactive 360-degree panoramic interior viewing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interactive 360-Degree Panorama Section -->
+  <section class="section section-alt" id="panorama-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">360° Spherical Viewer</div>
+        <h2>Interactive 360° Panoramic Experience</h2>
+        <p>Drag with your mouse or finger to look around in a full 360-degree perspective.</p>
+      </div>
+
+      <div class="canvas-container-wrapper" id="panorama-viewer-container" style="height: 520px; border-color: var(--gold-border);">
+        <canvas id="panorama-canvas" style="width:100%; height:100%; display:block;"></canvas>
+
+        <!-- 360 HUD Controls -->
+        <div class="canvas-hud-controls">
+          <button class="hud-btn active" id="pano-btn-autopan">
+            <i class="fa-solid fa-arrows-rotate"></i> Auto-Pan
+          </button>
+          <button class="hud-btn" id="pano-btn-fullscreen">
+            <i class="fa-solid fa-expand"></i> Fullscreen
+          </button>
+        </div>
+
+        <div class="canvas-hint-drag">
+          <i class="fa-solid fa-arrows-up-down-left-right"></i> Drag to Look Around · Scroll to Zoom
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery Showcase -->
+  <section class="section section-dark" id="video-showcase">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Actual Project Video Stories</div>
+        <h2>Architectural Video Showcase</h2>
+        <p>Curated video documentation of TEMER projects in Bole, Kazanchis, and Sarbet.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="gallery-filters" id="gallery-video-filters"></div>
+
+      <!-- Videos Grid -->
+      <div class="video-grid" id="gallery-video-grid"></div>
+    </div>
+  </section>
+
+  <!-- Authentic Photo Gallery -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Project Stills</div>
+        <h2>Architectural Photography</h2>
+        <p>Real photography of completed towers and delivery handovers in Addis Ababa.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:24px;">
+        <div style="height:360px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); position:relative; box-shadow:var(--shadow-sm);">
+          <img src="../assets/images/IMG_9490.JPG" alt="Ayat Feres Bet Site Active Construction" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; width:100%; padding:14px; background:linear-gradient(180deg, transparent, rgba(10,12,16,0.9)); color:#ffffff; font-size:0.9rem;">
+            Ayat Feres Bet Site · Structural Construction & Scaffolding
+          </div>
+        </div>
+        <div style="height:360px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); position:relative; box-shadow:var(--shadow-sm);">
+          <img src="../assets/images/IMG_9492.JPG" alt="Garment Site Development" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; width:100%; padding:14px; background:linear-gradient(180deg, transparent, rgba(10,12,16,0.9)); color:#ffffff; font-size:0.9rem;">
+            Garment Site 1 & 2 · Elevation & Road Access
+          </div>
+        </div>
+        <div style="height:360px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); position:relative; box-shadow:var(--shadow-sm);">
+          <img src="../assets/images/hero-1.jpg" alt="TEMER Luxury Facade" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; width:100%; padding:14px; background:linear-gradient(180deg, transparent, rgba(10,12,16,0.9)); color:#ffffff; font-size:0.9rem;">
+            Luxury High-Rise Residence · Exterior Architecture
+          </div>
+        </div>
+        <div style="height:360px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); position:relative; box-shadow:var(--shadow-sm);">
+          <img src="../assets/images/hero-2.jpg" alt="Interior Living Room" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; width:100%; padding:14px; background:linear-gradient(180deg, transparent, rgba(10,12,16,0.9)); color:#ffffff; font-size:0.9rem;">
+            Contemporary Interior Design · Living & Dining Space
+          </div>
+        </div>
+        <div style="height:360px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); position:relative; box-shadow:var(--shadow-sm);">
+          <img src="../assets/images/IMG_7732.JPG" alt="Structural Engineering" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; width:100%; padding:14px; background:linear-gradient(180deg, transparent, rgba(10,12,16,0.9)); color:#ffffff; font-size:0.9rem;">
+            Structural Engineering · Reinforced Concrete Superstructure
+          </div>
+        </div>
+        <div style="height:360px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border); position:relative; box-shadow:var(--shadow-sm);">
+          <img src="../assets/images/photo_2026-10-09_10-14-17.jpg" alt="TEMER Tower Bole" style="width:100%; height:100%; object-fit:cover;">
+          <div style="position:absolute; bottom:0; left:0; width:100%; padding:14px; background:linear-gradient(180deg, transparent, rgba(10,12,16,0.9)); color:#ffffff; font-size:0.9rem;">
+            TEMER Premier Tower · Bole Atlas Corridor Landmark
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom:14px;">
+            <img src="../assets/images/Logo.jpg" alt="Temer Properties" class="brand-logo-img">
+        <div class="logo-text">
+          <span class="logo-title">TEMER <br>PROPERTIES</span>
+        </div>
+          </div>
+          <p>TEMER Real Estate (TEMER Properties) is a real estate development company based in Addis Ababa, Ethiopia. Founded in 2010 EC, with over 350 apartment units delivered.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="properties.html">Properties</a>
+            <a href="3d-explorer.html">3D Property Explorer</a>
+            <a href="projects.html">Projects</a>
+            <a href="locations.html">Locations</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Residential Development</a>
+            <a href="diaspora.html">Diaspora Services</a>
+            <a href="about.html">About Company</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Contact TEMER</h4>
+          <div class="footer-links">
+            <div style="color:var(--text-white); font-weight:600;"><i class="fa-solid fa-phone text-gold"></i> +251 941 246 658</div>
+            <div style="color:var(--temer-green-light); font-weight:600;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Available</div>
+            <div style="color:var(--text-secondary);"><i class="fa-solid fa-location-dot text-gold"></i> Addis Ababa, Ethiopia</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 TEMER Real Estate. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/251941246658" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Three.js CDN for 360 Panorama -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Components -->
+  <script src="../js/main.js"></script>
+  <script src="../js/panorama-viewer.js"></script>
+  <script src="../js/video-gallery.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize 360 Panorama
+      if (window.initPanoramaViewer) {
+        window.initPanoramaViewer({
+          containerId: 'panorama-viewer-container',
+          canvasId: 'panorama-canvas'
+        });
+      }
+
+      // Initialize Video Gallery
+      if (window.initVideoGallery) {
+        window.initVideoGallery({
+          containerId: 'gallery-video-grid',
+          filterContainerId: 'gallery-video-filters'
+        });
+      }
+    });
+  </script>
+
+  <!-- Floating Quick Contact Widget -->
+  <div class="floating-contact-widget" id="floating-contact-widget">
+    <div class="floating-contact-menu">
+      <div class="floating-menu-title">Get in Touch</div>
+      <a href="tel:+251941246658" class="floating-menu-item item-phone">
+        <i class="fa-solid fa-phone"></i> Call +251 941 246 658
+      </a>
+      <a href="https://wa.me/251941246658" target="_blank" rel="noopener noreferrer" class="floating-menu-item item-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+      <a href="https://t.me/Nati2378" target="_blank" rel="noopener noreferrer" class="floating-menu-item item-telegram">
+        <i class="fa-brands fa-telegram"></i> Message on Telegram
+      </a>
+    </div>
+
+    <button class="floating-main-btn" aria-label="Open contact options" title="Quick Contact">
+      <i class="fa-solid fa-comment-dots"></i>
+    </button>
+  </div>
+
+</body>
+</html>

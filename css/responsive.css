@@ -1,0 +1,221 @@
+/* ==========================================================================
+   TEMER Real Estate — Responsive Stylesheet
+   Mobile-first media queries and touch-friendly UI adjustments
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 74px;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .intro-image {
+    height: 380px;
+  }
+
+  .diaspora-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .search-filter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-filter-grid button {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Medium Tablets & Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: transform var(--transition-medium);
+    overflow-y: auto;
+    z-index: 999;
+    border-top: 1px solid var(--border);
+  }
+
+  .main-nav.open {
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    width: 100%;
+    color: var(--foreground) !important;
+    border-radius: var(--radius-md);
+    background: transparent;
+    transition: all var(--transition-fast);
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: var(--accent);
+    color: var(--accent-foreground) !important;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .mobile-nav-cta {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mobile-nav-cta .btn {
+    width: 100%;
+  }
+
+  .hero-section {
+    height: auto;
+    min-height: 560px;
+    padding: 100px 0 60px;
+  }
+
+  .search-filter-section {
+    margin-top: 0;
+    padding: 30px 16px 20px;
+  }
+
+  .search-filter-card {
+    padding: 20px 16px;
+  }
+
+  .search-filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-filter-grid button {
+    width: 100%;
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .form-row-dual {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-contact-widget {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .floating-contact-menu {
+    width: 240px;
+  }
+}
+
+/* Small Smart Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-trust-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .card-actions .btn {
+    width: 100%;
+  }
+}
