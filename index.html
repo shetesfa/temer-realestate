@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temer Real Estate | Addis Ababa Property Experts</title>
-  <meta name="description" content="Temer Real Estate offers premium homes, apartments, and property sales in Addis Ababa and Ayat. Discover trusted real estate services in Ethiopia.">
-  <meta name="keywords" content="Addis Ababa Real Estate, Real Estate in Addis Ababa, Ayat Real Estate, Temer Real Estate, Temer Properties, Temer Property Sales, Bole luxury homes, Ayat homes for sale">
+  <meta name="description" content="Temer Real Estate (ቴመር ሪል እስቴት) offers verified apartments, penthouses, and property sales in Addis Ababa: Ayat Feres Bet, Bole, Sarbet, and Garment. Direct developer pricing, call 0941246658 or Telegram @Nati2378.">
+  <meta name="keywords" content="Temer Real Estate, Temer Properties, Temer Property Sales, ቴመር ሪል እስቴት, ቴመር, ቴመር አፓርታማ, Addis Ababa Real Estate, Real Estate in Addis Ababa, Ayat Real Estate, Ayat Feres Bet, Bole luxury homes, Sarbet apartments, Garment real estate, Sumale Tera, Ethiopian Diaspora real estate, Nati 0941246658">
   <meta name="theme-color" content="#3a7d44">
-  <link rel="canonical" href="https://temerpropertiessales.com/">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shetesfa.github.io/temer-realestate/">
 
   <!-- Open Graph / Meta -->
-  <meta property="og:title" content="Temer Real Estate | Addis Ababa Property Experts">
-  <meta property="og:description" content="Temer Real Estate offers premium homes, apartments, and property sales in Addis Ababa and Ayat. Discover trusted real estate services in Ethiopia.">
-  <meta property="og:image" content="assets/images/hero-1.jpg">
+  <meta property="og:title" content="Temer Real Estate | Direct Addis Ababa Property Sales">
+  <meta property="og:description" content="Temer Real Estate offers direct developer sales in Ayat Feres Bet, Bole, Sarbet, and Garment with verified title deeds and 0% broker fees.">
+  <meta property="og:image" content="https://shetesfa.github.io/temer-realestate/assets/images/hero-1.jpg">
+  <meta property="og:url" content="https://shetesfa.github.io/temer-realestate/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -27,6 +29,47 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://shetesfa.github.io/temer-realestate/#website",
+        "url": "https://shetesfa.github.io/temer-realestate/",
+        "name": "Temer Real Estate",
+        "description": "Direct Developer Real Estate Sales in Addis Ababa, Ethiopia",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://shetesfa.github.io/temer-realestate/pages/properties.html?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "RealEstateAgent",
+        "@id": "https://shetesfa.github.io/temer-realestate/#organization",
+        "name": "Temer Real Estate",
+        "alternateName": ["Temer Properties", "Temer Property Sales", "ቴመር ሪል እስቴት", "ቴመር", "ቴመር ፕሮፐርቲስ"],
+        "url": "https://shetesfa.github.io/temer-realestate/",
+        "logo": "https://shetesfa.github.io/temer-realestate/assets/images/Logo.jpg",
+        "image": "https://shetesfa.github.io/temer-realestate/assets/images/hero-1.jpg",
+        "telephone": "+251941246658",
+        "priceRange": "11,500,000 ETB - 26,000,000 ETB",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Addis Ababa",
+          "addressCountry": "ET"
+        },
+        "sameAs": [
+          "https://t.me/Nati2378",
+          "https://wa.me/251941246658"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -153,17 +196,26 @@
     <div class="container">
       <div class="search-filter-card reveal-fade-up">
         <form id="home-search-form" class="search-filter-grid">
+          <div class="filter-group search-input-group">
+            <label class="filter-label" for="home-filter-search">Keyword or Project</label>
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" id="home-filter-search" class="filter-input" placeholder="Search 'Temer', 'Ayat', 'Bole', 'Penthouse', '3 Beds'..." autocomplete="off">
+              <div id="home-search-suggestions" class="search-suggestions-dropdown"></div>
+            </div>
+          </div>
+
           <div class="filter-group">
             <label class="filter-label" for="home-filter-location">Location</label>
             <select id="home-filter-location" class="filter-select">
               <option value="all">All Locations</option>
-              <option value="Ayat">Ayat</option>
-              <option value="Bole">Bole</option>
+              <option value="Ayat">Ayat (Feres Bet)</option>
+              <option value="Bole">Bole (Atlas)</option>
               <option value="Sarbet">Sarbet</option>
               <option value="Garment">Garment</option>
-              <option value="CMC">CMC</option>
+              <option value="Sumale">Sumale Tera</option>
+              <option value="CMC">CMC Corridor</option>
               <option value="Kazanchis">Kazanchis</option>
-              <option value="Summit">Summit</option>
             </select>
           </div>
 
@@ -172,8 +224,8 @@
             <select id="home-filter-type" class="filter-select">
               <option value="all">All Property Types</option>
               <option value="Apartment">Luxury Apartments</option>
-              <option value="Sky Villa">Sky Villas & Duplexes</option>
-              <option value="Penthouse">Penthouse Residences</option>
+              <option value="Penthouse">Sky Villas & Penthouses</option>
+              <option value="Commercial">Commercial Suites</option>
             </select>
           </div>
 
@@ -187,10 +239,31 @@
             </select>
           </div>
 
-          <button type="submit" class="btn btn-primary" style="height:48px;">
-            <i class="fa-solid fa-magnifying-glass"></i> Search Properties
-          </button>
+          <div style="display:flex; gap:8px;">
+            <button type="submit" class="btn btn-primary" style="height:48px; flex:1;">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+            <button type="button" id="home-filter-reset" class="btn btn-outline" style="height:48px; padding:0 14px;" title="Reset filters">
+              <i class="fa-solid fa-rotate-left"></i>
+            </button>
+          </div>
         </form>
+
+        <!-- Popular Quick Search Tags -->
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:16px; padding-top:14px; border-top:1px dashed var(--border);">
+          <span style="font-size:0.8rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">
+            <i class="fa-solid fa-bolt" style="color:var(--primary);"></i> Popular:
+          </span>
+          <button type="button" class="quick-tag-btn active" data-search="temer">All Temer Properties</button>
+          <button type="button" class="quick-tag-btn" data-search="ayat">Ayat Site</button>
+          <button type="button" class="quick-tag-btn" data-search="bole">Bole Atlas</button>
+          <button type="button" class="quick-tag-btn" data-search="sarbet">Sarbet Site</button>
+          <button type="button" class="quick-tag-btn" data-search="garment">Garment Site</button>
+          <button type="button" class="quick-tag-btn" data-search="sumale">Sumale Tera</button>
+          <button type="button" class="quick-tag-btn" data-search="penthouse">Penthouses</button>
+          <button type="button" class="quick-tag-btn" data-search="3 bed">3-Bed Units</button>
+          <button type="button" class="quick-tag-btn" data-search="2 bed">2-Bed Units</button>
+        </div>
       </div>
     </div>
   </section>

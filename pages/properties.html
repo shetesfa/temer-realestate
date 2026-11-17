@@ -4,7 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Properties for Sale in Addis Ababa | TEMER Real Estate</title>
-  <meta name="description" content="Browse verified luxury apartments, sky penthouses, and commercial properties in Addis Ababa by TEMER Real Estate. Bole, Kazanchis, Sarbet, and CMC corridors.">
+  <meta name="description" content="Browse verified luxury apartments, sky penthouses, and commercial properties in Addis Ababa by TEMER Real Estate. Ayat Feres Bet, Bole Atlas, Sarbet, and Garment corridors.">
+  <meta name="keywords" content="Temer Real Estate, Temer Properties, ቴመር ሪል እስቴት, ቴመር, Ayat real estate, Bole apartments, Sarbet apartments, Garment real estate, Addis Ababa property sales">
+  <meta name="theme-color" content="#3a7d44">
+  <link rel="canonical" href="https://shetesfa.github.io/temer-realestate/pages/properties.html">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Properties for Sale in Addis Ababa | TEMER Real Estate">
+  <meta property="og:description" content="Browse verified luxury apartments, sky penthouses, and commercial properties in Addis Ababa by TEMER Real Estate. Ayat Feres Bet, Bole Atlas, Sarbet, and Garment corridors.">
+  <meta property="og:image" content="../assets/images/hero-1.jpg">
+  <meta property="og:url" content="https://shetesfa.github.io/temer-realestate/pages/properties.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/images/Logo.jpg" type="image/jpeg">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -79,7 +92,7 @@
           <!-- Live Search -->
           <div>
             <label class="form-label" for="filter-search" style="font-size:0.8rem;">Search Properties</label>
-            <input type="text" id="filter-search" class="form-control" placeholder="Property name or location...">
+            <input type="text" id="filter-search" class="form-control" placeholder="Search 'Temer', 'Ayat', 'Bole', 'Penthouse', '3 Beds'...">
           </div>
 
           <!-- Type -->
@@ -88,7 +101,7 @@
             <select id="filter-type" class="form-control">
               <option value="all">All Types</option>
               <option value="Apartment">Apartment</option>
-              <option value="Penthouse">Sky Penthouse</option>
+              <option value="Penthouse">Sky Penthouse / Villa</option>
               <option value="Commercial">Commercial</option>
             </select>
           </div>
@@ -98,9 +111,12 @@
             <label class="form-label" for="filter-location" style="font-size:0.8rem;">Location</label>
             <select id="filter-location" class="form-control">
               <option value="all">All Addis Corridors</option>
-              <option value="Bole">Bole</option>
-              <option value="Kazanchis">Kazanchis</option>
+              <option value="Ayat">Ayat (Feres Bet)</option>
+              <option value="Bole">Bole (Atlas)</option>
               <option value="Sarbet">Sarbet</option>
+              <option value="Garment">Garment</option>
+              <option value="Sumale">Sumale Tera</option>
+              <option value="Kazanchis">Kazanchis</option>
               <option value="CMC">CMC Corridor</option>
             </select>
           </div>
@@ -133,6 +149,20 @@
               <i class="fa-solid fa-rotate-left"></i> Reset
             </button>
           </div>
+        </div>
+
+        <!-- Quick Search Tags -->
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:16px; padding-top:12px; border-top:1px dashed var(--border-light);">
+          <span style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);"><i class="fa-solid fa-bolt" style="color:var(--gold-primary);"></i> Quick Tags:</span>
+          <button type="button" class="quick-tag-btn active" data-search="temer">All Temer Properties</button>
+          <button type="button" class="quick-tag-btn" data-search="ayat">Ayat Site</button>
+          <button type="button" class="quick-tag-btn" data-search="bole">Bole Tower</button>
+          <button type="button" class="quick-tag-btn" data-search="sarbet">Sarbet Site</button>
+          <button type="button" class="quick-tag-btn" data-search="garment">Garment Site</button>
+          <button type="button" class="quick-tag-btn" data-search="sumale">Sumale Tera</button>
+          <button type="button" class="quick-tag-btn" data-search="penthouse">Penthouses</button>
+          <button type="button" class="quick-tag-btn" data-search="3 bed">3-Bed Units</button>
+          <button type="button" class="quick-tag-btn" data-search="2 bed">2-Bed Units</button>
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top:18px; padding-top:14px; border-top:1px solid var(--border-light); font-size:0.85rem; color:var(--text-secondary);">
@@ -236,6 +266,21 @@
           featuredOnly: false
         });
       }
+
+      // Quick Tag Buttons
+      const tagButtons = document.querySelectorAll('.quick-tag-btn');
+      const searchInput = document.getElementById('filter-search');
+      tagButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tagButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const term = btn.getAttribute('data-search') || '';
+          if (searchInput) {
+            searchInput.value = term;
+            searchInput.dispatchEvent(new Event('input'));
+          }
+        });
+      });
     });
   </script>
 
