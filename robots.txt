@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shetesfa.github.io/temer-realestate/sitemap.xml
+Sitemap: https://temerrealestete.com.et/sitemap.xml
