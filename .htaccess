@@ -1,0 +1,4 @@
+# Temer Real Estate - redirect www to the bare domain
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.temerrealestete\.com\.et$ [NC]
+RewriteRule ^(.*)$ https://temerrealestete.com.et/$1 [R=301,L]
